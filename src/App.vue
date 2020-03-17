@@ -1,10 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <b-navbar type="dark" variant="primary">
+      <b-navbar-brand>covid-19</b-navbar-brand>
+      <b-navbar-nav>
+        <b-nav-item to="/">Playground</b-nav-item>
+        <b-nav-item to="/links">Other Visualisation Links</b-nav-item>
+      </b-navbar-nav>
+    </b-navbar>
+    <b-container fluid>
+      <router-view />
+    </b-container>
   </div>
 </template>
 
@@ -13,7 +18,6 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
