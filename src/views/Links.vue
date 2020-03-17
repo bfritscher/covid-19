@@ -16,7 +16,14 @@
 
       <h2 class="mt-5">Simulations / Models</h2>
       <b-row>
-        <b-col cols="12" sm="6" md="3" v-for="(href, i) in models" :key="i">
+        <b-col
+          cols="12"
+          sm="6"
+          md="4"
+          lg="3"
+          v-for="(href, i) in models"
+          :key="i"
+        >
           <a :href="href"> <b-img thumbnail fluid :src="href | pic"></b-img></a>
         </b-col>
       </b-row>
@@ -52,6 +59,7 @@ export default {
         "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
         "https://jenfly.github.io/covid-19/covid-19-timeseries.html",
         "http://corona-ch.surge.sh/",
+        "https://dashcoch.herokuapp.com/",
         "https://www.bing.com/covid",
         "https://ourworldindata.org/coronavirus",
         "https://www.nzz.ch/panorama/die-wichtigsten-grafiken-zum-coronavirus-ld.1542774"
