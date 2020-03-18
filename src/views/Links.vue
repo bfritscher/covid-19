@@ -46,6 +46,10 @@
             >worldometers.info/coronavirus/</a
           >
         </li>
+        <li>
+          <a href="https://pages.semanticscholar.org/coronavirus-research">
+          COVID-19 Open Research Dataset (CORD-19)</a>
+        </li>
       </ul>
     </b-container>
   </div>
@@ -62,7 +66,8 @@ export default {
         "https://dashcoch.herokuapp.com/",
         "https://www.bing.com/covid",
         "https://ourworldindata.org/coronavirus",
-        "https://www.nzz.ch/panorama/die-wichtigsten-grafiken-zum-coronavirus-ld.1542774"
+        "https://www.nzz.ch/panorama/die-wichtigsten-grafiken-zum-coronavirus-ld.1542774",
+        "https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca"
       ],
       models: [
         "https://www.washingtonpost.com/graphics/2020/world/corona-simulator/",
