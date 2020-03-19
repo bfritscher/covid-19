@@ -50,6 +50,9 @@
           <a href="https://pages.semanticscholar.org/coronavirus-research">
           COVID-19 Open Research Dataset (CORD-19)</a>
         </li>
+        <li>
+          <a href="https://db.schoolofdata.ch/">Open ZH projects (schoolofdata)</a>
+        </li>
       </ul>
     </b-container>
   </div>
@@ -63,11 +66,15 @@ export default {
         "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
         "https://jenfly.github.io/covid-19/covid-19-timeseries.html",
         "http://corona-ch.surge.sh/",
-        "https://dashcoch.herokuapp.com/",
+        "https://www.corona-data.ch/",
+        "https://kickstart.ch/interaktive-coronavirus-karte/",
+        "https://rsalzer.github.io/COVID_19_CH/",
         "https://www.bing.com/covid",
         "https://ourworldindata.org/coronavirus",
+        "https://chschoenenberger.shinyapps.io/covid19_dashboard/",
         "https://www.nzz.ch/panorama/die-wichtigsten-grafiken-zum-coronavirus-ld.1542774",
-        "https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca"
+        "https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca",
+        "https://projects.propublica.org/graphics/covid-hospitals"
       ],
       models: [
         "https://www.washingtonpost.com/graphics/2020/world/corona-simulator/",
