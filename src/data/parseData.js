@@ -11,11 +11,14 @@ let covidConfirmed = parse(covid, { from_line: 1 });
 
 // fix numbers
 const idxFix = covidConfirmed[0].indexOf("3/12/20");
-const idxFix2 = covidConfirmed[0].indexOf("3/16/20");
 
 function fix(row, country, nb, idxFix) {
   if (row[1] === country) {
-    row[idxFix] = nb;
+    if (idxFix === -1) {
+      row.push(nb)
+    } else {
+      row[idxFix] = nb;
+    }
   }
 }
 
@@ -30,7 +33,9 @@ covidConfirmed.forEach(r => {
     r[0] = "";
     r[1] = "China, Hubei";
   }
-  fix(r, "Switzerland", 2650, idxFix2);
+  fix(r, "Switzerland", 2650, covidConfirmed[0].indexOf("3/17/20"));
+  fix(r, "Switzerland", 3028, covidConfirmed[0].indexOf("3/18/20"));
+  fix(r, "Switzerland", 3888, covidConfirmed[0].indexOf("3/19/20"));
   /*
 
     cov.loc[(cov['Country/Region'] == 'Italy') & idx_date, 'Deaths'] = 1016
