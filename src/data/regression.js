@@ -33,7 +33,7 @@ function iniGuess(C) {
   K = (C[k2] * p) / q;
 
   // .calculate r
-  r = Math.log((C[k3] * (C[k2] - C[k1])) / C[k1] / (C[k3] - C[k2]));
+  r = Math.log((C[k3] * (C[k2] - C[k1])) / C[k1] / (C[k3] - C[k2])) / m;
   if (r < 0) {
     throw new Error(`r is negatif ${r}`);
   }
