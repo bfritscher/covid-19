@@ -39,6 +39,7 @@ covidConfirmed.forEach(r => {
   fix(r, "Switzerland", 4840, covidConfirmed[0].indexOf("3/20/20"));
   fix(r, "Switzerland", 6113, covidConfirmed[0].indexOf("3/21/20"));
   fix(r, "Switzerland", 7014, covidConfirmed[0].indexOf("3/22/20"));
+  fix(r, "Switzerland", 8060, covidConfirmed[0].indexOf("3/22/20"));
   /*
 
     cov.loc[(cov['Country/Region'] == 'Italy') & idx_date, 'Deaths'] = 1016
