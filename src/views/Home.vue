@@ -56,6 +56,12 @@
     <b-row>
       <b-col>
         <h2>Current Data</h2>
+        <b-form-group label="Filter min confirmed">
+          <b-form-input
+            v-model.lazy="minConfirmed"
+            type="number"
+          ></b-form-input>
+        </b-form-group>
         <b-form-group label="Data">
           <b-form-radio-group v-model="dataKey" name="radio-sub-component">
             <b-form-radio value="confirmed">Confirmed</b-form-radio>
@@ -96,7 +102,8 @@ export default {
   data() {
     return {
       config,
-      dataKey: "population",
+      minConfirmed: 1000,
+      dataKey: "confirmed",
       model: {
         data: {}
       },
@@ -153,7 +160,9 @@ export default {
       };
     },
     sortedDatasets() {
-      let ds = this.datasets.slice(0);
+      let ds = this.datasets
+        .slice(0)
+        .filter(d => Math.max(...d.confirmed) >= this.minConfirmed);
       ds.sort((a, b) => {
         if (a.label === this.config.selectedCountry) return -1; //Italy //Switzerland
         if (b.label === this.config.selectedCountry) return 1;
