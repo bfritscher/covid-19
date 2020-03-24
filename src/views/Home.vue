@@ -100,6 +100,8 @@ export default {
       model: {
         data: {}
       },
+      datasets,
+      labels,
       options: {
         type: "logarithmic"
       },
@@ -146,12 +148,12 @@ export default {
     },
     datacollection() {
       return {
-        labels: labels,
+        labels: this.labels,
         datasets: this.sortedDatasets
       };
     },
     sortedDatasets() {
-      let ds = datasets.slice(0);
+      let ds = this.datasets.slice(0);
       ds.sort((a, b) => {
         if (a.label === this.config.selectedCountry) return -1; //Italy //Switzerland
         if (b.label === this.config.selectedCountry) return 1;
@@ -185,7 +187,7 @@ export default {
       return ds;
     },
     optionsCountries() {
-      const countries = datasets.map(ds => ds.label);
+      const countries = this.datasets.map(ds => ds.label);
       countries.sort();
       return countries;
     }
