@@ -54,6 +54,13 @@
           <a href="https://db.schoolofdata.ch/">Open ZH projects (schoolofdata)</a>
         </li>
       </ul>
+
+      <h2 class="mt-5">Research</h2>
+      <ul>
+        <li>
+          <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30566-3/fulltext">Clinical course and risk factors for mortality of adult inpatients with COVID-19 in Wuhan, China: a retrospective cohort study</a>
+        </li>
+      </ul>
     </b-container>
   </div>
 </template>
@@ -64,9 +71,10 @@ export default {
     return {
       visualisations: [
         "https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6",
+        "https://www.corona-data.ch/",
+        "https://www.ft.com/coronavirus-latest",
         "https://jenfly.github.io/covid-19/covid-19-timeseries.html",
         "http://corona-ch.surge.sh/",
-        "https://www.corona-data.ch/",
         "https://kickstart.ch/interaktive-coronavirus-karte/",
         "https://rsalzer.github.io/COVID_19_CH/",
         "https://www.bing.com/covid",
@@ -79,7 +87,9 @@ export default {
       models: [
         "https://www.washingtonpost.com/graphics/2020/world/corona-simulator/",
         "https://www.mathworks.com/matlabcentral/fileexchange/74411-fitvirus",
-        "https://neherlab.org/covid19/"
+        "https://ch.mathworks.com/matlabcentral/fileexchange/74658-fitviruscovid19",
+        "https://neherlab.org/covid19/",
+        "https://gabgoh.github.io/COVID/index.html"
       ]
     };
   },

@@ -1,5 +1,7 @@
 <template>
   <div class="home">
+    <p><a href="https://www.rts.ch/info/monde/11191187-ce-que-disent-et-ne-disent-pas-les-chiffres-et-les-courbes-du-coronavirus.html">Ce que disent et ne disent pas les chiffres et les courbes du coronavirus</a></p>
+
     <multiselect
       v-model="config.selectedCountry"
       :options="optionsCountries"
