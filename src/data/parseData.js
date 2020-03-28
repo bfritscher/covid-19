@@ -49,7 +49,7 @@ fetch(
   .then(async covid => {
     const covidConfirmed = parse(covid, { from_line: 1 });
     await fetch(
-      "https://raw.githubusercontent.com/daenuprobst/covid19-cases-switzerland/master/covid19_cases_switzerland.csv"
+      "https://raw.githubusercontent.com/daenuprobst/covid19-cases-switzerland/master/covid19_cases_switzerland_openzh.csv"
     )
       .then(r => r.text())
       .then(covid => {
