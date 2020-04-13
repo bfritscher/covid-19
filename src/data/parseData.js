@@ -120,7 +120,8 @@ fetch(
       23574,
       24308,
       24900,
-      25300
+      25300,
+      25580
     ]);
     covidConfirmed.forEach(r => {
       if (r[0] === "Hubei") {
